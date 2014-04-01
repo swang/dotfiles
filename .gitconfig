@@ -1,0 +1,11 @@
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	addu = add -u
+	cane = commit --amend --no-edit
+[color]
+	ui = true
+[user]
+	email = shuanwang@gmail.com
+	name = Shuan Wang
+[core]
+	autocrlf = false
