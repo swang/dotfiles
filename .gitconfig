@@ -3,6 +3,7 @@
   addu = add -u
   cane = commit --amend --no-edit
   no = show --pretty="format:" --name-only
+  lbc = for-each-ref --sort=-committerdate refs/heads/ # shows branch order based on last commit  
 [color]
   ui = true
 [user]
