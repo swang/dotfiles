@@ -9,6 +9,7 @@ export PS1="\u@\h \w\[\033[32m\]\$(__git_ps1)\[\033[00m\]: "
 
 alias sublime="open -a /Applications/Sublime\ Text\ 2.app" 
 alias subl="open -a /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
+alias json='python -mjson.tool'
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
