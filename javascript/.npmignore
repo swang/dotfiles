@@ -3,4 +3,8 @@ npm-debug.log
 test*.js
 test/*.js
 .travis.yml
+.travis.yml
+.jshintignore
 .jshintrc
+.jscsrc
+.eslintrc
