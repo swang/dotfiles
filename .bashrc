@@ -22,5 +22,11 @@ fi
 export NVM_DIR="/Users/shuan/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
+# Avoid duplicates
+export HISTCONTROL=ignoredups:erasedups
+
+# Append to history when shell exits
 shopt -s histappend
-export PROMPT_COMMAND="${PROMPT_COMMAND};history -a; history -n"
+
+# Save and reload the history after each command finishes
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
