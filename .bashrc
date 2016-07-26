@@ -11,7 +11,11 @@ alias sublime="open -a /Applications/Sublime\ Text\ 2.app"
 alias subl="open -a /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
 alias json='python -mjson.tool'
 
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
+command_exists () {
+    type "$1" &> /dev/null;
+}
+# source: http://stackoverflow.com/a/3931779
+if command_exists brew && [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
