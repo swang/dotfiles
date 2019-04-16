@@ -4,7 +4,7 @@
   cane = commit --amend --no-edit
   no = show --pretty="format:" --name-only
   # lbc: shows branch order based on last commit  
-  lbc = for-each-ref --sort=-committerdate --format='%(color:nodim)%(color:red)%(objectname:short)  %(align:20,left)%(color:bold blue)%(authorname)%(color:normal)%(end) %(color:yellow)%(refname:short)%(color:normal)' refs/heads
+  lbc = for-each-ref --sort=-committerdate --count=10 --format='%(color:nodim)%(color:red)%(objectname:short)  %(align:20,left)%(color:bold blue)%(authorname)%(color:normal)%(end) %(color:yellow)%(refname:short)%(color:normal)' refs/heads
   mias = merge -Xignore-all-space
 [color]
   ui = true
